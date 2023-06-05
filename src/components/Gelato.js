@@ -1,6 +1,6 @@
 import React from "react";
 
-const Gelato = ({ nome, descrizione, img, prezzo, categoria }) => {
+const Gelato = ({ nome, decrizione, img, prezzo, categoria }) => {
   return (
     <article className="gelato">
       <div className="img-container">
@@ -16,7 +16,8 @@ const Gelato = ({ nome, descrizione, img, prezzo, categoria }) => {
             <h6>{(prezzo / 100).toFixed(2)}€</h6>
           </span>
         </header>
-        <p>{descrizione}</p>
+        <hr />
+        <p>{decrizione}</p>
       </div>
     </article>
   );
